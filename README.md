@@ -1,7 +1,7 @@
 # `docker-compose` on Container Optimized OS (GCE) with access to GCR & GAR
 
-Since GCE's [Container-Optimized OS](https://cloud.google.com/container-optimized-os) do not include `docker-compose` by default.
-So, we need to use the official [docker/compose](https://hub.docker.com/r/docker/compose) image as a workaround.
+Since GCE's [Container-Optimized OS](https://cloud.google.com/container-optimized-os) does not include `docker-compose` by default.
+We have to use the official [docker/compose](https://hub.docker.com/r/docker/compose) image as a workaround.
 However, `docker/compose` cannot access [GCR](https://cloud.google.com/container-registry) or [GAR](https://cloud.google.com/artifact-registry) to pull private images.
 Therefore we have to create a custom docker-compose image which is authenticated to __GCR__ / __GAR__.
 
