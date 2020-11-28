@@ -1,4 +1,4 @@
-# `docker-compose`  on Container Optimized OS (GCE) with access to GCR & GAR
+# `docker-compose` on Container Optimized OS (GCE) with access to GCR & GAR
 
 Since GCE's [Container-Optimized OS](https://cloud.google.com/container-optimized-os) do not include `docker-compose` by default.
 So, we need to use the official [docker/compose](https://hub.docker.com/r/docker/compose) image as a workaround.
